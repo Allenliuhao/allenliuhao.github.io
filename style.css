@@ -7,7 +7,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #ff0505;
+    color:white;
+}
+b {
+    text-decoration: none;
+    color:red;
+    size: 24;
 }
 
 h1 {
@@ -33,11 +38,53 @@ h3{
 .dt {
     text-align: center;
 }
+.dtt{
+    width: 70px;
+    height:30px;
+    text-align: center;
+    background-color:  #05cdff;
+    transition:width 2s, height 2s;
+}
+.dtt:hover{
+    width:70px;
+    height:30px;
+    background-color: red;
+}
 
+.dttt{
+    color:red;
+    line-height: 30px;
+    padding-left:10px;
+    position: fixed;
+}
+
+.dtttt{
+    width:200px;
+    height:20px;
+    position:relative;
+    animation:myfirst 6s;
+}
+@keyframes myfirst{
+    0%   {background:white; left:0px; top:0px;}
+    50%  {background:rgb(255, 0, 0); left:200px; top:0px;}
+    100% {background:white; left:0px; top:0px;}
+}
 .container {
     width: 800px;
     margin: 0 auto;
     padding: 10px 20px;
-    margin-top: 0;
-    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521477280960&di=1a9c56da766e6fdb391c4ef81c48b196&imgtype=0&src=http%3A%2F%2Fattimg.dospy.com%2Fimg%2Fday_120403%2F20120403_ff7d00e3c8890ac99d0ft829Pq8AcoeE.jpg")
+    margin-top: 0;  
+    background-image: url("123.jpg")
+}
+
+@media(max-width:880px){
+    .container{
+        width: 100%;
+    }
+    .h1{
+        padding-left:10px;
+    }
+    .dt{
+        text-align: left;
+    }
 }
